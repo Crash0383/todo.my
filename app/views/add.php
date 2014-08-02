@@ -36,8 +36,8 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Главная</a></li>
-          <li><a href="/?r=add">Добавить</a></li>
+          <li><a href="/">Главная</a></li>
+          <li class="active"><a href="/?r=add">Добавить</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -45,42 +45,28 @@
       </div>
 
       <div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <h1>Новая задача</h1>
+
+
+         <form role="form">
+          <div class="form-group">
+            <label for="task">Название</label>
+            <input type="email" class="form-control" id="task" placeholder="Название">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Выполнено
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Добавить</button>
+        </form>
+      
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">&nbsp;</div>
         <div class="col-lg-6">&nbsp;</div>
-      </div
+      </div>
 
       <div class="footer">
         <p>&copy; Company 2014</p>

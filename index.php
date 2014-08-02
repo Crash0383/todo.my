@@ -22,23 +22,11 @@ if ($request->getRoute() == "add") {
 function todoList($request)
 {
     $pageTitle = "ToDo List";
-    // echo $request->getParam("age");
-    // echo "<br/>";
-    // echo $request->getParam("name");
-    // echo "<br/>";
-    // echo $request->getParam("fname", "...");
-    
     include __DIR__."/app/views/list.php";
 }
 
 function todoDelete()
-{
-    if ( !isset($_GET['id']) ) {
-        echo "Id not found";
-        return;   
-    }
-    echo $_GET['id'];
-    echo "<br />Delete page";
+{   
 }
 
 // http://localhost:12345/?r=add
@@ -47,20 +35,8 @@ function todoAdd()
     // get from $_POST
     $title;
     $data;
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<h1>Add</h1>
-
-</body>
-</html>
-
-<?php
+    include __DIR__."/app/views/add.php";
 }
 
 function todoShow()
